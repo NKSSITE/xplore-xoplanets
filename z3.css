@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and General Styles */
+body {
+    background-color: #f5f7fa; /* Light background for easy readability */
+    color: #333; /* Dark text color for contrast */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main Heading (Page Title) */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #2c3e50; /* Dark blue-gray for emphasis */
+    margin-bottom: 40px;
+}
+
+/* Subheadings (Section Titles) */
+h2 {
+    font-size: 2.5rem;
+    color: #34495e; /* Darker blue-gray for section titles */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd; /* Add a subtle border under the section titles */
+    padding-bottom: 10px;
+}
+
+/* Sub-subheadings (Method and Characteristic Titles) */
+h3 {
+    font-size: 1.8rem;
+    color: #3498db; /* Bright blue to distinguish sub-subheadings */
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1.2rem;
+    color: #555; /* Medium gray for body text */
+    margin-bottom: 20px;
+    line-height: 1.8; /* Improve text spacing for readability */
+}
+
+/* Strong Text */
+strong {
+    color: #e74c3c; /* Bright red for emphasis */
+}
+
+/* Adding Padding and Margins */
+body {
+    padding: 20px;
+}
+
+/* Section Separation for Clarity */
+h3 + p {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee; /* Light border between sections for better separation */
+}
+
+/* Page Structure */
+.page {
+    background-color: #ffffff; /* White background for content */
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card-like sections */
+    margin-bottom: 40px;
+}
+
+/* List Styling */
+ul {
+    margin-left: 20px;
+    list-style: square;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

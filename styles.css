@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: white;
+}
+
+#intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://www.nasa.gov/sites/default/files/thumbnails/image/pia23260-16.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#intro button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#menu {
+  padding: 50px;
+  text-align: center;
+}
+
+#menu ul {
+  list-style-type: none;
+}
+
+#menu button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.content {
+  text-align: center;
+  padding: 50px;
+}
+
+video {
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 20px 0;
+}

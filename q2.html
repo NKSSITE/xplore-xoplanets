@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exoplanet Quiz - Question 2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><button onclick="window.location.href='mainmenu.html'">Home</button></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <h2>Exoplanet Quiz - Question 2</h2>
+    <form id="quizForm2">
+      <p>2. Which of the following methods is commonly used to detect exoplanets?</p>
+      <input type="radio" name="q2" value="A"> Observing the planet's atmosphere directly<br>
+      <input type="radio" name="q2" value="B"> The transit method, where the planet passes in front of its star<br>
+      <input type="radio" name="q2" value="C"> Observing the planet's gravitational effects on nearby asteroids<br><br>
+      <button type="button" onclick="submitQuiz2()">Submit</button>
+    </form>
+    <p id="quizResult"></p>
+
+    <!-- Centered Finish Button -->
+    <div class="button-container">
+      <button id="finishBtn" onclick="window.location.href='q3.html'" style="display:none;">Finish</button>
+    </div>
+  </section>
+
+  <script>
+    function submitQuiz2() {
+      const form = document.getElementById('quizForm2');
+      const selectedAnswer = form.querySelector('input[name="q2"]:checked');
+      const result = document.getElementById('quizResult');
+      const finishBtn = document.getElementById('finishBtn');
+
+      if (!selectedAnswer) {
+        result.innerHTML = "Please select an answer.";
+        result.style.color = "red";
+        return;
+      }
+
+      if (selectedAnswer.value === "B") {
+        result.innerHTML = "Correct! The transit method is commonly used to detect exoplanets.";
+        result.style.color = "green";
+        finishBtn.style.display = "block"; // Show the finish button
+      } else {
+        result.innerHTML = "Incorrect. Please try again!";
+        result.style.color = "red";
+        finishBtn.style.display = "none"; // Hide the finish button
+      }
+    }
+  </script>
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('https://images.wallpaperscraft.ru/image/single/kosmos_galaktika_blesk_137572_2400x3840.jpg'); /* Background image */
+        background-size: cover;
+        background-position: top center;
+        background-repeat: repeat-y;
+        min-height: 200vh;
+    }
+
+    .content {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .button-container {
+        margin-top: 20px; /* Spacing between the submit button and the next page button */
+        display: flex;
+        justify-content: center; /* Centers the button horizontally */
+    }
+
+    #nextPageBtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #nextPageBtn:hover {
+        background-color: #45a049;
+    }
+  </style>
+</body>
+</html>

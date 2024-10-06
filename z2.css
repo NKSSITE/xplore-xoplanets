@@ -1,0 +1,79 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and General Styles */
+body {
+    background-color: #f0f8ff; /* Light blue background to give a space-like theme */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main Heading (Page Title) */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #2c3e50; /* Dark blue-gray for emphasis */
+    margin-bottom: 40px;
+}
+
+/* Subheadings (Section Titles) */
+h2 {
+    font-size: 2rem;
+    color: #34495e; /* Slightly darker blue-gray for section titles */
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.2rem;
+    color: #555; /* Medium gray for body text */
+    margin-bottom: 20px;
+    line-height: 1.8; /* Improved spacing for readability */
+}
+
+/* Strong Text Styling */
+strong {
+    color: #e74c3c; /* Bright red for strong emphasis */
+}
+
+/* Section Padding for Separation */
+h2 + p {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0; /* Subtle border for section separation */
+}
+
+/* Page Layout */
+.page {
+    background-color: #ffffff; /* White background for content */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for card-like sections */
+    margin-bottom: 40px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

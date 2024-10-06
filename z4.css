@@ -1,0 +1,111 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and General Styles */
+body {
+    background-color: #f4f7fa; /* Light background for easy readability */
+    color: #333; /* Dark text for contrast */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main Heading (Page Title) */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #2c3e50; /* Dark blue-gray for emphasis */
+    margin-bottom: 40px;
+}
+
+/* Subheadings (Section Titles) */
+h2 {
+    font-size: 2.5rem;
+    color: #34495e; /* Slightly darker blue-gray for section titles */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd; /* Subtle border under section titles */
+    padding-bottom: 10px;
+}
+
+/* Sub-subheadings (Paragraph Titles) */
+h3 {
+    font-size: 1.8rem;
+    color: #3498db; /* Bright blue for sub-subheadings */
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.2rem;
+    color: #555; /* Medium gray for body text */
+    margin-bottom: 20px;
+    line-height: 1.8; /* Improve text spacing for readability */
+}
+
+/* Strong Text */
+strong {
+    color: #e74c3c; /* Bright red for strong emphasis */
+}
+
+/* List Styling */
+ul {
+    margin-left: 20px;
+    list-style: disc; /* Bullet points */
+    color: #555;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Example styling */
+ul li em {
+    color: #3498db; /* Highlight example names in bright blue */
+}
+
+/* Additional Section Styling for clarity */
+h3 + p {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee; /* Light border between sections */
+}
+
+/* Page Container for Better Layout */
+.content {
+    background-color: #ffffff; /* White background for content */
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for card-like look */
+    margin-bottom: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

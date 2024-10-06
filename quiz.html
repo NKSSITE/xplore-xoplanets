@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exoplanet Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><button onclick="window.location.href='mainmenu.html'">Home</button></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <h2>Exoplanet Quiz</h2>
+    <form id="quizForm">
+      <p>1. What is an exoplanet?</p>
+      <input type="radio" name="q1" value="A"> A planet in our solar system<br>
+      <input type="radio" name="q1" value="B"> A planet outside our solar system<br>
+      <input type="radio" name="q1" value="C"> A star<br>
+      <input type="radio" name="q1" value="D"> A moon<br><br>
+      <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+    <p id="quizResult"></p>
+    
+    <!-- Centered Next Page button -->
+    <div class="button-container">
+      <button id="nextPageBtn" onclick="window.location.href='q2.html'" style="display:none;">Next Page</button>
+    </div>
+  </section>
+
+  <script src="quiz.js"></script>
+
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('https://images.wallpaperscraft.ru/image/single/kosmos_galaktika_blesk_137572_2400x3840.jpg'); /* Background image */
+        background-size: cover;
+        background-position: top center;
+        background-repeat: repeat-y;
+        min-height: 200vh;
+    }
+
+    .content {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .button-container {
+        margin-top: 20px; /* Spacing between the submit button and the next page button */
+        display: flex;
+        justify-content: center; /* Centers the button horizontally */
+    }
+
+    #nextPageBtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #nextPageBtn:hover {
+        background-color: #45a049;
+    }
+  </style>
+</body>
+</html>
